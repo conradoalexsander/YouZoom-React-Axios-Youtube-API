@@ -1,0 +1,44 @@
+.ui.container {
+  margin: 10px;
+}
+
+.myContent {
+  display: grid;
+  grid-template-columns: 1fr 400px;
+  grid-template-rows: auto;
+  grid-template-areas: "main sidebar";
+
+  /* setting the gap between rows (0) and vertical columns (10px); */
+  grid-gap: 50px;
+}
+
+.videoPlayer {
+  margin-top: 35px;
+  grid-area: main;
+  border: none;
+}
+
+.video.item {
+  display: inline;
+  display: flex;
+}
+
+.videoCard {
+  grid-area: sidebar;
+  margin: 20px;
+  display: grid;
+  grid-template-columns: 0.5fr 0.5fr;
+  grid-template-rows: auto;
+  grid-template-areas: "image desc";
+
+  /* setting the gap between rows (0) and vertical columns (10px); */
+  grid-gap: 10px;
+}
+
+.cardImage {
+  grid-area: image;
+}
+
+.cardDescription {
+  grid-area: desc;
+}
